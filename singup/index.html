@@ -1,36 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="singup_style.css" />
     <link rel="stylesheet" type="text/css" href="../style.css" />
-    <title>Sing up</title>
+    <link rel="stylesheet" href="../login_form_common.css"/>
+    <link rel="stylesheet" href="../header_style.css" />
+    <title>Реєстрація</title>
 </head>
-
 <body>
-
-    <div>
-        <h1>Sing up</h1>
-        Email <input type="email">
-        Password <input type="password">
-        Surmame <input type="text">
-        First name <input type="text">
-        Second name <input type="text">
-        Date of birth <input type="date">
-        Group <select class="group">
-            <option value="value1">IA-31</option>
-            <option value="value2">IA-32</option>
-            <option value="value3">IA-33</option>
-            <option value="value4">IA-34</option>
-        </select>
-        Profile picture<input type="file" name="picture" accept="image/png, image/jpeg" />
-        <form action="../account/index.html"></form>
-        <input type="submit" value="Sing up" />
+    <header>
+        <a href="../index.html" class="header-logo"></a>
+        <nav>
+            <a>
+                Меню
+            </a>
+            <a>
+                Рецепти
+            </a>
+            <a href="../authentication/index.html">
+                Обліковий запис
+            </a>
+            <a href="../faq/index.html">
+                FAQ
+            </a>
+        </nav>
+        <label for="main-menu-checker" class="main-menu-button"></label>
+        <input type="checkbox" id="main-menu-checker" />
+        <div class="mobile-main-menu-container">
+            <label for="main-menu-checker" class="mobile-main-menu-filler"></label>
+            <div class="mobile-main-menu">
+                <a href="../index.html" class="menu-item">
+                    Головна
+                </a>
+                <a class="menu-item">
+                    Меню
+                </a>
+                <a class="menu-item">
+                    Рецепти
+                </a>
+                <a href="../authentication/index.html" class="menu-item">
+                    Обліковий запис
+                </a>
+                <a href="../faq/index.html" class="menu-item">
+                    FAQ
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <form action="../account/index.html">
+            <h1>Реєстрація</h1>
+            <label>
+                Ел. пошта
+                <input type="email" name="email">
+            </label>
+            <label>
+                Пароль
+                <input type="password" name="password">
+            </label>
+            <label>
+                Прізвище
+                <input type="text" name="surname">
+            </label>
+            <label>
+                Ім'я
+                <input type="text" name="first_name">
+            </label>
+            <label>
+                По-батькові
+                <input type="text" name="second_name">
+            </label>
+            <label>
+                Дата народження
+                <input type="date" name="date">
+            </label>
+            <label>
+                Група
+                <select class="group" name="group">
+                    <option value="value1">IA-31</option>
+                    <option value="value2">IA-32</option>
+                    <option value="value3">IA-33</option>
+                    <option value="value4">IA-34</option>
+                </select>
+            </label>
+            <label>
+                Картинка профілю
+                <input type="file" name="picture" accept="image/*" />
+            </label>
+            <div>
+                <button type="submit">
+                    Реєстрація
+                </button>
+            </div>
         </form>
-
-    </div>
+    </main>
 </body>
-
 </html>

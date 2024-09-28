@@ -4,16 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="autentification_style.css" />
     <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link rel="stylesheet" href="../login_form_common.css"/>
+    <link rel="stylesheet" href="../header_style.css" />
     <title>Authentication</title>
 </head>
 
 <body>
-    <div class="auth-container">
-        <div><a href="../login/index.html">Увійти</a></div>
-        <div><a href="../singup/index.html">Зареєструватися</a></div>
-    </div>
+    <header>
+        <a href="../index.html" class="header-logo"></a>
+        <nav>
+            <a>
+                Меню
+            </a>
+            <a>
+                Рецепти
+            </a>
+            <a>
+                Обліковий запис
+            </a>
+            <a href="../faq/index.html">
+                FAQ
+            </a>
+        </nav>
+        <label for="main-menu-checker" class="main-menu-button"></label>
+        <input type="checkbox" id="main-menu-checker" />
+        <div class="mobile-main-menu-container">
+            <label for="main-menu-checker" class="mobile-main-menu-filler"></label>
+            <div class="mobile-main-menu">
+                <a href="../index.html" class="menu-item">
+                    Головна
+                </a>
+                <a class="menu-item">
+                    Меню
+                </a>
+                <a class="menu-item">
+                    Рецепти
+                </a>
+                <a class="menu-item">
+                    Обліковий запис
+                </a>
+                <a href="../faq/index.html" class="menu-item">
+                    FAQ
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <form action="../account/index.html">
+            <h1>Вхід</h1>
+            <label>
+                Ел. пошта
+                <input type="email" name="email"/>
+            </label>
+            <label>
+                Пароль
+                <input type="password" name="password"/>
+            </label>
+            <div>
+                <button type="submit">Увійти</button>
+            </div>
+            <div class="text-small">
+                Не маєте облікового запису?
+                <a href="../singup/index.html">Створіть його!</a>
+            </div>
+        </form>
+    </main>
 </body>
-
 </html>
