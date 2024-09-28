@@ -78,6 +78,7 @@ nav>a {
     color: rgb(231, 85, 12);
     border-bottom: 2px solid rgb(231, 85, 12);
     margin: 1em;
+    text-decoration: none;
 }
 
 .mobile-main-menu-filler {

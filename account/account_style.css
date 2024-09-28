@@ -4,8 +4,7 @@ body {
 }
 
 .admin-panel {
-    max-width: 1200px;
-    margin: 50px auto;
+    margin: 20px;
     background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(102, 45, 2, 0.1);
     border-radius: 8px;
@@ -62,4 +61,14 @@ table tr:hover {
     font-size: 14px;
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+    .table-wrapper {
+        overflow-x: scroll;
+    }
+
+    .actions {
+        flex-flow: column;
+    }
 }
